@@ -12,7 +12,6 @@ const AuthenticateRequest = (
   if (!token) return res.status(401).json({ message: "Token invalid" });
   else {
     const payload = verifyAccessToken(token);
-    console.log(payload);
 
     if (!payload) return res.status(403).json({ messsage: "Token expired" });
     else {

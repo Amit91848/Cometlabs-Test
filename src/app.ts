@@ -11,10 +11,6 @@ const app = express();
 app.use(urlencoded({ extended: true }));
 app.use(json());
 
-app.get("/", (_, res) => {
-  res.json({ message: "Shit bussin" });
-});
-
 app.use("/user", userRoute);
 app.use("/problem", problemRoute);
 app.use("/testcase", testcaseRoute);
