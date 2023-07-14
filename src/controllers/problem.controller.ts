@@ -31,7 +31,7 @@ export const allQuestions = async (
   const limit = req.query.limit || DEFAULT_LIMIT;
   try {
     const { data } = await axios.get(
-      `${SPHERE_PROBLEMS_URL}/problems?access_token${SPHERE_ENGINE_PROBLEM_TOKEN}&offset=${offset}&limit=${limit}`
+      `${SPHERE_PROBLEMS_URL}/problems?access_token=${SPHERE_ENGINE_PROBLEM_TOKEN}&offset=${offset}&limit=${limit}`
     );
 
     res.json(data);
