@@ -20,6 +20,9 @@
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.3.4"
   },
+  "engines": {
+    "node": ">=NODE_JS_VERSION"
+  },
   "scripts": {
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts"
   }
